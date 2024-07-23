@@ -21,7 +21,7 @@ public class Main {
         if (number < 0) {
             return false;
         }
-        for (int i = 1; i < number; i++) {
+        for (int i = 1; i <= number/2; i++) {
             if (number % i == 0) {
                 result += i;
             }
