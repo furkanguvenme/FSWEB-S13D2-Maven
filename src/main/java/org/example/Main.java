@@ -40,8 +40,8 @@ public class Main {
         String[] onedigit = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
         char[] numbers = String.valueOf(numb).toCharArray();
         String[] word = new String[numbers.length];
-        for (int p = 0; p < numbers.length; p++) {
-                word[p] = onedigit[Character.getNumericValue(numbers[p])];
+        for (int x = 0; x < numbers.length; x++) {
+                word[x] = onedigit[Character.getNumericValue(numbers[x])];
         }
         return String.join(" ", word);
     }
