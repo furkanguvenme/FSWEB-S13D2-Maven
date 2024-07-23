@@ -7,17 +7,13 @@ public class Main {
 
     public static boolean isPalindrome(int num) {
         int number = Math.abs(num);
-        boolean result = false;
         char[] nums = String.valueOf(number).toCharArray();
-        for (int i = 0; i < nums.length; i++) {
-            int p = nums.length - (i + 1);
-            if (nums[i] == nums[p]) {
-                result = true;
-            } else {
-                result = false;
+        for (int i = 0; i < nums.length / 2; i++) {
+            if (nums[i] != nums[nums.length - (i + 1)]) {
+                return false;
             }
         }
-        return result;
+        return true;
     }
 
     public static boolean isPerfectNumber(int number) {
